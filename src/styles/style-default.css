@@ -1,0 +1,20 @@
+@import url(./window/window-default.css);
+
+:root {
+    --color-background: #111316;
+    --color-letter: #fff;
+    --color-l-editor: #fff;
+    --color-b-editor: #0d0f11;
+    --color-l-preview: #000;
+    --color-b-preview: #fff;
+    --width-navbar: 75px;
+    --height-editor: 250px;
+    --height-toolbar: 32px;
+    --border-toolbar: 4px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}

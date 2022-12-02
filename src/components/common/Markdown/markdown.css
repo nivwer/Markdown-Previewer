@@ -1,64 +1,12 @@
-.editor button,
-.preview button {
-    width: var(--height-toolbar);
-    height: var(--height-toolbar);
-    padding: 0;
-    margin: auto;
-}
-
-.editor button div,
-.preview button div {
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.editor .toolbar,
-.preview .toolbar {
-    width: 100%;
-    height: var(--height-toolbar);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: var(--color-letter);
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px; 
-}
-
-.editor .w-header,
-.preview .w-header {
-    margin-left: 20px;
-    
-}
-
-.editor .icon,
-.preview .icon {
-    height: 22px;
-    padding: auto;
-    margin: auto;
-}
-
-.editor .icon-close-ig,
-.preview .icon-close-ig {
-    height: 26px;
-}
-
-
-
-
 /* Editor */
 
 .editor {
-    position: absolute;
     width: calc(90vw -  var(--width-navbar));
     max-width: 500px;
     height: var(--height-editor);
     background-color: var(--color-b-editor);
     top: 30px;
-    border-radius: 5px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    z-index: 30;
 }
 
 .editor textarea {
@@ -71,8 +19,6 @@
     color: var(--color-l-editor);
     background-color: var(--color-b-editor);
     resize: none;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
 }
 
 .w-fullscreen textarea {
@@ -82,19 +28,16 @@
 
 /* Preview */
 
-
 .preview {
     background-color: var(--color-b-preview);
     color: var(--color-l-preview);
     width: calc(95vw - var(--width-navbar));
     max-width: 800px;
-    height: 100%;
+    height: calc(100vh - 100px);
     min-height: 100px;
     max-height: 100%;
     margin: 50px 0;
-    border-radius: 5px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    z-index: 20;
 }
 
 .preview .content {
@@ -103,4 +46,8 @@
     overflow: auto;
     overflow-x: hidden;
     padding: 15px;
+}
+
+.w-fullscreen .content {
+    height: calc(100vh - var(--height-toolbar));
 }

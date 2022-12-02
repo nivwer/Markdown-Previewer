@@ -6,6 +6,7 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    box-shadow: 0 0 8px 0 #000000;
 }
 
 .navbar .buttons {
@@ -27,8 +28,8 @@
     box-shadow: 1px 2px 10px 0 #000000;
 }
 
-.navbar .icon {
-    height: 25px;
+.navbar .icon-b {
+    height: 24px;
     padding: auto;
     margin: auto;
 }

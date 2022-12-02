@@ -1,7 +1,7 @@
-export default function Icon({ Icon }) {
+export default function Icon(props) {
     return (
       <div>
-        <img className="icon" src={"/icons/bootstrap/" + Icon + ".svg"} />
+        <img className="icon" src={"/icons/bootstrap/" + props.Icon + ".svg"} />
       </div>
     );
 }

@@ -1,0 +1,75 @@
+.window {
+    position: absolute;
+    width: calc(95vw - var(--width-navbar));
+    max-width: 800px;
+    height: calc(100vh - 100px);
+    min-height: 100px;
+    max-height: 100%;
+    box-shadow: 2px 2px 10px 0 #000000;
+    background-color: azure;
+}
+
+
+.window button {
+    width: 47px;
+    height: calc(var(--height-toolbar) - var(--border-toolbar));
+    padding: 0;
+    margin: auto;
+    border: none;
+    border-radius: 0;
+    background-color: black;
+}
+
+.window button div {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.window .toolbar {
+    width: 100%;
+    height: var(--height-toolbar);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    color: var(--color-letter);
+    background-color:  #000000;
+    border-bottom: var(--border-toolbar) solid #000000;
+    font-size: 16px;
+    cursor: default;
+}
+
+.window .w-header {
+    margin-left: 15px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.window .w-header div {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.window .icon {
+    height: 16px;
+    padding: auto;
+    margin: auto;
+}
+
+.window .icon-b {
+    height: 20px;
+    padding: auto;
+    margin: auto;
+}
+
+.window .icon-close-ig {
+    height: 25px;
+}
+

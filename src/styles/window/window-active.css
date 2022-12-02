@@ -1,0 +1,23 @@
+.w-hidden {
+    display: none;
+}
+
+.w-fullscreen {
+    margin: 0;
+    padding: 0;
+    max-width: none;
+    max-height: none;
+    width: calc(100vw - var(--width-navbar));
+    height: 100vh;
+    top: 0;
+    border-radius: 0;
+}
+
+.w-fullscreen .toolbar {
+    border-radius: 0;
+}
+
+
+.w-active {
+    z-index: 100;
+}

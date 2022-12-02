@@ -1,7 +1,8 @@
 import styles from "./markdown.css";
 import Draggable from 'react-draggable';
-import { Button, hiddenE, hiddenP, fullscreen, fullscreens } from '../Buttons';
-import { useMarked } from "./Marked";
+import { Button, hiddenE, hiddenP, fullscreen, fullscreens, select } from '../buttons';
+import Icon from "../icons";
+import { useMarked } from "./marked";
 
 
 
@@ -17,9 +18,10 @@ export function Markedown() {
                 grid={[1, 1]}
                 scale={1}
                 id="draggable">
-                <div id="editor" className="editor">
-                    <div id="w-toolbar" className="toolbar bg-dark w-draggable">
+                <div id="editor" className="editor window">
+                    <div id="w-toolbar" className="toolbar w-draggable">
                         <div className="w-header">
+                            <Icon Icon={"editor"}/>
                             <span>Editor</span>
                         </div>
                         <div className="buttons">
@@ -31,9 +33,10 @@ export function Markedown() {
                 </div>
             </Draggable>
             
-            <div id="preview" className="preview">
-                <div className="toolbar bg-dark">
+            <div id="preview" onClick={select} className="preview window">
+                <div className="toolbar">
                     <div className="w-header">
+                        <Icon Icon={"preview"}/>
                         <span>Preview</span>
                     </div>
                     <div className="buttons">
